@@ -104,20 +104,57 @@ footer{padding:5vh 12px;font-size:10px}
 .rail{left:10px;right:10px;bottom:12px;height:48px;padding-top:8px}.rt{gap:6px}.rt img{width:22px;height:36px}
 .frame{inset:8px}.cnt{display:none}.ghost{font-size:30vw}.br.v{height:42%}.br.d{height:24%}}
 @media(prefers-reduced-motion:reduce){.curtain{display:none}.w>span,.fade{transition:none;transform:none;opacity:1}}
-</style></head><body>
+:root{--fs-body:clamp(18px,1.3vw,21px);--fs-lead:clamp(22px,1.9vw,29px);--fs-label:14px}
+body{font-size:var(--fs-body);line-height:1.6;font-variant-numeric:lining-nums}
+.left:before{content:"";position:absolute;inset:0;background:rgba(241,233,218,.5);pointer-events:none;z-index:0}
+.brand{background:rgba(241,233,218,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--st)}
+.brand b{font-size:26px;letter-spacing:.01em}.brand i{font-size:13px;letter-spacing:.12em;font-weight:700}
+p{font-size:var(--fs-body);line-height:1.6;max-width:32em;color:var(--fg);text-wrap:pretty;font-weight:500}
+.k{font-size:var(--fs-label);letter-spacing:.14em;color:var(--mo2);font-weight:700;display:flex;align-items:center;gap:14px}
+.k:before{content:"";width:36px;height:1px;background:var(--mo);flex:none}
+h1{font-size:clamp(50px,6.2vw,104px);line-height:1.02;letter-spacing:-.015em;font-style:normal;font-weight:400;text-wrap:balance}
+h1 em{display:block;font-style:italic;font-weight:500;color:var(--mo2)}
+h2{font-size:clamp(40px,4.6vw,76px);line-height:1.06;letter-spacing:-.012em;font-style:normal;font-weight:400;text-wrap:balance}
+h2 b{font-style:italic;font-weight:600;color:var(--mo2)}
+.lead{font-size:var(--fs-lead);line-height:1.45;font-style:italic;font-weight:500;color:var(--fg);border-left:2px solid var(--mo);padding-left:18px;max-width:28em;text-wrap:pretty}
+.acc{font-style:italic;font-weight:700;text-decoration:underline;text-decoration-thickness:from-font;text-decoration-color:var(--mo);text-underline-offset:.18em}
+.panel .acc{color:var(--iv);text-decoration-color:var(--lime)}
+.num{font-size:30px;font-weight:600;letter-spacing:.08em}
+.facts div{grid-template-columns:1fr;gap:4px;padding:22px 0}
+.facts dt{font-size:var(--fs-label);letter-spacing:.14em;font-weight:700}
+.facts dd{font-size:clamp(34px,3.2vw,52px);line-height:1.1;font-style:normal;font-weight:500;letter-spacing:-.01em}
+.facts div:first-child dd{font-size:clamp(46px,4.8vw,80px);font-style:italic}
+li{font-size:clamp(20px,1.6vw,24px);line-height:1.4;padding:20px 0 20px 56px}
+li:before{font-size:30px;top:14px;font-weight:600}
+.cta{font-size:clamp(32px,3.2vw,50px);font-weight:500;line-height:1.15;color:var(--iv)}
+.btn{font-size:clamp(26px,2.2vw,34px)}
+.soc a{font-size:15px;letter-spacing:.12em}
+blockquote{font-size:clamp(26px,2.4vw,36px);line-height:1.3;font-weight:500}
+blockquote small{font-size:14px;letter-spacing:.12em}
+footer{font-size:14px;letter-spacing:.1em}
+.qa .curtain{display:none}.qa .fade,.qa .w>span{transition:none!important;opacity:1!important;transform:none!important}.qa section{min-height:0!important;padding:40px 12px!important}.qa .stage{position:relative!important}
+@media(max-width:900px){
+:root{--fs-body:18px;--fs-lead:22px}
+.wrap{grid-template-columns:minmax(0,54%) minmax(0,46%)}.brand{width:54%}.brand b{font-size:20px}.brand i{display:none}
+h1{font-size:clamp(34px,9.2vw,46px)}h2{font-size:clamp(32px,9vw,42px)}
+.num{font-size:24px}.lead{padding-left:12px}.k{font-size:13px;letter-spacing:.1em;gap:8px}.k:before{width:16px}
+.facts dd{font-size:28px}.facts div:first-child dd{font-size:40px}
+li{font-size:19px;padding:14px 0 14px 40px}li:before{font-size:24px;top:12px}
+.cta{font-size:28px}.btn{font-size:22px}blockquote{font-size:22px}.win{aspect-ratio:3/4}}</style></head><body>
+<script>if(location.search.includes('flat'))document.documentElement.classList.add('qa')</script>
 <div class="cur" id="cur"></div>
 <div class="curtain"><span>Pearl &amp; Gold</span></div>
 <div class="brand"><b>Pearl &amp; Gold</b><i>ЮВЕЛИРНЫЙ ВЕЧЕР · MMXXVI</i></div>
 <div class="wrap">
 <main class="left">
 <section class="in" id="s0"><p class="k fade" style="--d:0">Москва · 03 декабря 2026</p>
-<h1 data-split>Украшения <em>с характером</em></h1>
-<div class="win w1 fade" style="--d:2"></div>
-<p class="lead fade" style="--d:3">Откройте для себя магию создания утончённых украшений, которые подчеркнут вашу индивидуальность и добавят роскоши в ваш образ.</p>
-<p class="fade" style="--d:4">Приглашаем вас на эксклюзивный ювелирный творческий вечер, где вы окунётесь в мир жемчуга и благородных природных камней.</p></section>
+<h1 data-split>Украшения <em>с&nbsp;характером</em></h1>
+<p class="lead fade" style="--d:3">Откройте для себя магию создания утончённых украшений, которые подчеркнут вашу индивидуальность и добавят роскоши в ваш образ.</p><div class="win w1 fade" style="--d:2"></div>
+
+<p class="fade" style="--d:4">Приглашаем вас на эксклюзивный ювелирный творческий вечер, где вы окунётесь в мир <span class="acc">жемчуга</span> и&nbsp;благородных <span class="acc">природных камней</span>.</p></section>
 <section><div class="num fade">I</div><h2 data-split>Вечер, <b>который останется</b></h2>
-<dl class="facts fade" style="--d:1"><div><dt>Дата</dt><dd>03.12.2026</dd></div><div><dt>Время</dt><dd>19:00</dd></div><div><dt>Место</dt><dd>Москва, Кузнецкий Мост, 6/3 ст3</dd></div></dl>
-<p class="fade" style="--d:2">От выбора жемчужин до финальной сборки — вы создадите авторское украшение своими руками под руководством мастера.</p></section>
+<dl class="facts fade" style="--d:1"><div><dt>Дата</dt><dd>03.12.2026</dd></div><div><dt>Время</dt><dd>19:00</dd></div><div><dt>Место</dt><dd>Москва, Кузнецкий Мост, 6/3&nbsp;ст3</dd></div></dl>
+<p class="fade" style="--d:2">От выбора жемчужин до финальной сборки — вы создадите авторское украшение <span class="acc">своими руками</span> под&nbsp;руководством мастера.</p></section>
 <section><div class="num fade">II</div><h2 data-split>Что <b>вас ждёт</b></h2>
 <div class="win w2 fade" style="--d:1"></div>
 <ul class="fade" style="--d:2"><li>Натуральный жемчуг и природные камни — выбираете сами</li><li>Техники нанизывания, плетения и сборки фурнитуры</li><li>Подвески, серьги, браслеты, колье — создаёте своё</li><li>Атмосфера римского сада: тёплый свет, камень, оливковые ветви</li><li>Готовое украшение вы уносите с собой</li></ul></section>
@@ -153,7 +190,7 @@ let target=0,pos=0,W=0,H=0,wc=0,hc=0,cx=0;
 const mob=()=>innerWidth<=900;
 const STEP=()=>innerHeight*.5; /* высота прокрутки на одну карточку */
 function measure(){W=stage.clientWidth;H=stage.clientHeight;const qh=H-(mob()?64:120);
- wc=mob()?Math.min(W*.6,qh*.88*.58):Math.min(W*.31,qh*.88*.58);hc=wc/.58;cx=mob()?W*.38:W*.25;
+ wc=mob()?Math.min(W*.72,qh*.88*.58):Math.min(W*.31,qh*.88*.58);hc=wc/.58;cx=mob()?W*.42:W*.25;
  cards.forEach(c=>{c.style.width=wc+'px';c.style.height=hc+'px'})}
 const SC=.76,LN=-Math.log(SC);
 function render(p){
@@ -185,7 +222,7 @@ document.querySelectorAll('a,.stage').forEach(a=>{a.addEventListener('mouseenter
 
 </script>
 <script>
-function placeArch(){const W=stage.clientWidth,H=stage.clientHeight,m=innerWidth<=900,qh=H-(m?64:120),wc=m?Math.min(W*.6,qh*.88*.58):Math.min(W*.31,qh*.88*.58),hc=wc/.58,cx=m?W*.38:W*.25,cy=qh*(m?.5:.52);let ah=hc*1.2,aw=ah*.667;if(aw>W*.98){aw=W*.98;ah=aw/.667}const a=document.getElementById('arch');a.style.left=cx+'px';a.style.top=cy+'px';a.style.width=aw+'px';a.style.height=ah+'px';a.style.transform='translate(-50%,-50%)'}
+function placeArch(){const W=stage.clientWidth,H=stage.clientHeight,m=innerWidth<=900,qh=H-(m?64:120),wc=m?Math.min(W*.72,qh*.88*.58):Math.min(W*.31,qh*.88*.58),hc=wc/.58,cx=m?W*.42:W*.25,cy=qh*(m?.5:.52);let ah=hc*1.2,aw=ah*.667;if(aw>W*.98){aw=W*.98;ah=aw/.667}const a=document.getElementById('arch');a.style.left=cx+'px';a.style.top=cy+'px';a.style.width=aw+'px';a.style.height=ah+'px';a.style.transform='translate(-50%,-50%)'}
 addEventListener('resize',placeArch);addEventListener('load',placeArch);placeArch();
 </script>
 <script>
