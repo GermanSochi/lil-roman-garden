@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Украшения с характером — вечер жемчуга, Москва</title>
+<meta name="description" content="Эксклюзивный ювелирный вечер: создание жемчужных украшений. Москва, 03.12.2026, 19:00.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+/* ROMAN GARDEN: тёплый известняк и слоновая кость слева, глубокая олива справа. Палитра kit: #25291C #17291F #D8C9AE #F1E9DA #B9AE9A #74745A. Один шрифт: Cormorant Garamond. */
+:root{--ol:#25291C;--fg:#17291F;--lime:#D8C9AE;--iv:#F1E9DA;--st:#B9AE9A;--mo:#74745A;--mo2:#5a5b43;--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--fg);color:var(--ol);font:500 20px/1.65 'Cormorant Garamond',serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ol);color:var(--iv)}a{color:inherit}
+.curtain{position:fixed;inset:0;z-index:100;background:var(--fg);display:grid;place-items:center;animation:up 1.3s var(--ease) 1.1s forwards}
+.curtain span{font:italic 300 clamp(28px,5vw,56px) 'Cormorant Garamond',serif;color:var(--lime);letter-spacing:.08em;animation:fade 1.6s ease forwards}
+@keyframes up{to{transform:translateY(-101%)}}@keyframes fade{50%{opacity:1}0%,100%{opacity:0}}
+.cur{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1px solid #fff;mix-blend-mode:difference;border-radius:50%;z-index:95;pointer-events:none;transition:width .3s,height .3s,margin .3s}
+.cur.big{width:70px;height:70px;margin:-35px 0 0 -35px}
+@media(pointer:coarse){.cur{display:none}}
+.wrap{display:grid;grid-template-columns:minmax(420px,45%) 1fr;min-height:100vh}
+.left{position:relative;z-index:3;background:var(--iv) url(assets/plaster.png) top/100% auto repeat-y;box-shadow:0 0 60px #0007}
+.left:after{content:"";position:absolute;right:0;top:0;bottom:0;width:1px;background:var(--st)}
+.brand{position:fixed;top:0;left:0;width:45%;min-width:420px;z-index:20;padding:26px 56px;display:flex;justify-content:space-between;align-items:baseline;pointer-events:none}
+.brand b{font:italic 600 28px 'Cormorant Garamond',serif;color:var(--fg);letter-spacing:.04em}
+.brand i{font:600 13px 'Cormorant Garamond',serif;letter-spacing:.35em;color:var(--mo2);font-style:normal}
+section,footer{position:relative;z-index:1}
+section{min-height:100vh;padding:15vh 56px 9vh;display:flex;flex-direction:column;justify-content:center;gap:28px}
+.num{font:italic 500 26px 'Cormorant Garamond',serif;color:var(--mo2);letter-spacing:.3em;display:flex;align-items:center;gap:16px}
+.num:after{content:"";height:1px;width:70px;background:var(--mo)}
+h1,h2{font:italic 300 clamp(44px,5.4vw,88px)/1.02 'Cormorant Garamond',serif;color:var(--fg);letter-spacing:-.005em}
+h2{font-size:clamp(38px,4.3vw,70px)}h1 em,h2 em{color:var(--mo2)}h2 b{font-weight:600}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em}
+.w>span{display:inline-block;transform:translateY(110%);transition:transform 1.1s var(--ease);transition-delay:calc(var(--i)*70ms)}
+.in .w>span{transform:none}
+.fade{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--d,0)*120ms + 300ms)}
+.in .fade{opacity:1;transform:none}
+.lead{font:italic 500 clamp(23px,2vw,30px)/1.4 'Cormorant Garamond',serif;color:var(--mo2);max-width:30em}
+p{max-width:34em;font-weight:500;line-height:1.75}
+.k{color:var(--mo2);letter-spacing:.32em;font-size:14px;text-transform:uppercase;font-weight:600}
+.win{width:min(80%,400px);aspect-ratio:4/5;border-radius:999px 999px 0 0;background:var(--lime) center/cover;box-shadow:0 0 0 1px var(--st),0 0 0 10px var(--iv),0 0 0 11px var(--st)}
+.w1{background-image:url(assets/win-hero.png)}.w2{background-image:url(assets/colonnade.png)}
+.div{width:300px;height:calc(300px*139/630);background:url(assets/dividers.png) 0 0/100% auto no-repeat;filter:brightness(.45) saturate(.7)}
+.facts{border-top:1px solid var(--st)}
+.facts div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:20px 0;border-bottom:1px solid var(--st);align-items:baseline}
+.facts dt{font:600 13px 'Cormorant Garamond',serif;letter-spacing:.3em;color:var(--mo2);text-transform:uppercase}
+.facts dd{font:italic 500 clamp(24px,2.2vw,34px)/1.2 'Cormorant Garamond',serif;color:var(--fg)}
+ul{list-style:none;border-top:1px solid var(--st);counter-reset:l}
+li{padding:18px 0 18px 46px;border-bottom:1px solid var(--st);position:relative;font-size:21px;counter-increment:l}
+li:before{content:counter(l,lower-roman);position:absolute;left:0;top:16px;font:italic 500 24px 'Cormorant Garamond',serif;color:var(--mo2)}
+.panel{background:var(--fg) url(assets/marble.png) center/cover;padding:40px 34px;color:var(--iv);display:flex;flex-direction:column;gap:24px;box-shadow:0 0 0 1px var(--st),0 0 0 8px var(--iv),0 0 0 9px var(--st)}
+.cta{font:italic 400 clamp(30px,3.2vw,48px)/1.12 'Cormorant Garamond',serif;color:var(--iv)}
+.btn{display:flex;justify-content:space-between;align-items:center;padding:24px 30px;background:var(--iv);color:var(--fg)!important;font:italic 600 30px 'Cormorant Garamond',serif;text-decoration:none;transition:background .5s,transform .5s var(--ease)}
+.btn svg{width:34px;transition:transform .5s var(--ease)}.btn:hover{background:var(--lime)}.btn:hover svg{transform:translateX(8px)}
+.soc{display:grid;grid-template-columns:1fr;gap:14px}
+.soc a{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px;border:1px solid var(--lime);color:var(--iv);text-decoration:none;letter-spacing:.2em;font-size:15px;text-transform:uppercase;font-weight:600;transition:.4s}
+.soc a:hover{background:var(--lime);color:var(--fg)}.soc svg{width:20px;height:20px;fill:currentColor}
+.silk{background:var(--lime) url(assets/silk.png) center/cover;padding:34px 30px;box-shadow:0 0 0 1px var(--st)}
+blockquote{font:italic 500 clamp(24px,2.2vw,32px)/1.35 'Cormorant Garamond',serif;color:var(--fg)}
+blockquote small{display:block;font:600 13px 'Cormorant Garamond',serif;letter-spacing:.25em;text-transform:uppercase;color:var(--mo2);margin-top:12px}
+footer{padding:8vh 56px;border-top:1px solid var(--st);color:var(--mo2);font-size:14px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.right{position:relative}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden;background:var(--fg) url(assets/wall.png) center/cover;touch-action:pan-y;cursor:grab;user-select:none}
+.stage.drag{cursor:grabbing}
+.stage:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 25% 50%,#0000 25%,#0a120ccc 100%);pointer-events:none}
+.ghost{position:absolute;right:-2vw;top:50%;transform:translateY(-50%);font:italic 300 22vw/1 'Cormorant Garamond',serif;color:transparent;-webkit-text-stroke:1px #D8C9AE33;white-space:nowrap}
+.arch{position:absolute;z-index:2000;pointer-events:none;display:block;left:25%;top:50%}
+.br{position:absolute;pointer-events:none;z-index:1;opacity:.8}.br.v{right:-3%;bottom:8%;height:60%}.br.d{right:4%;top:-3%;height:34%}
+.frame{position:absolute;inset:22px;border:1px solid #D8C9AE44;pointer-events:none;z-index:50}
+.queue{position:absolute;left:0;top:0;width:100%;height:calc(100% - 120px)}
+.card{position:absolute;left:0;top:0;transform-origin:50% 50%;will-change:transform,filter,opacity}
+.card img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent,#000 24%,#000 76%,transparent),linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 24%,#000 76%,transparent),linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent);mask-composite:intersect}
+.card i{opacity:0;transition:opacity .6s;position:absolute;left:4px;bottom:-34px;font:italic 500 18px 'Cormorant Garamond',serif;color:var(--lime);letter-spacing:.2em}
+.card.front i{opacity:1}
+.rail{position:absolute;left:44px;right:44px;bottom:44px;height:76px;overflow:hidden;z-index:40;border-top:1px solid #D8C9AE55;padding-top:12px}
+.rt{display:flex;gap:10px;will-change:transform}
+.rt img{flex:none;width:34px;height:54px;object-fit:cover;opacity:.4;transition:opacity .5s,transform .5s var(--ease);pointer-events:none}
+.rt img.on{opacity:1;transform:translateY(-4px)}
+.cnt{position:absolute;right:56px;top:46px;z-index:40;font:italic 500 20px 'Cormorant Garamond',serif;color:var(--lime);letter-spacing:.25em}
+.modal{position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:16px;background:rgba(14,22,16,.78);backdrop-filter:blur(6px);opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+.modal.open{opacity:1;visibility:visible}
+.mbox{position:relative;width:min(100%,420px);max-height:94vh;overflow:auto;background:var(--iv) url(assets/plaster.png) center/cover;color:var(--fg);padding:30px 26px 26px;text-align:center;box-shadow:0 0 0 1px var(--st),0 0 0 8px var(--iv),0 0 0 9px var(--st);transform:translateY(24px) scale(.97);transition:transform .5s var(--ease)}
+.modal.open .mbox{transform:none}
+.mbox h3{font:italic 600 36px/1.1 'Cormorant Garamond',serif;margin:0 0 8px}
+.mbox p{max-width:none;color:var(--ol);font-size:19px;line-height:1.3}
+.mbox img{display:block;width:min(70vw,250px);margin:18px auto;background:#fff;padding:8px}
+.mbox .mb{display:block;margin-top:10px;padding:14px;font:italic 600 23px 'Cormorant Garamond',serif;text-decoration:none;border:1px solid var(--fg);color:var(--fg);transition:.3s}
+.mbox .mb.pri{background:var(--fg);color:var(--iv)}.mbox .mb:hover{background:var(--lime);color:var(--fg)}
+.mx{position:absolute;right:12px;top:6px;background:none;border:0;font:300 36px/1 'Cormorant Garamond',serif;color:var(--fg);cursor:pointer;padding:6px 10px}
+@media(max-width:900px){
+.wrap{grid-template-columns:minmax(0,48%) minmax(0,52%)}.left{min-width:0}
+.brand{width:48%;min-width:0;padding:14px 12px}.brand b{font-size:19px}.brand i{display:none}
+.stage{height:100vh;height:100svh}
+section{padding:15vh 12px 8vh;min-height:100svh;gap:16px}
+body{font-size:17px;line-height:1.5}p{font-size:17px}
+h1{font-size:clamp(28px,9vw,44px)}h2{font-size:clamp(26px,8vw,40px)}h1,h2,.lead,li,.facts dd{overflow-wrap:anywhere;hyphens:auto}
+.num{font-size:17px}.num:after{width:30px}.lead{font-size:19px}
+.win{width:92%}.div{width:150px;height:calc(150px*139/630)}
+.facts div{grid-template-columns:1fr;gap:2px;padding:14px 0}.facts dd{font-size:21px}
+li{padding:12px 0 12px 30px;font-size:17px}li:before{font-size:18px;top:10px}
+.panel{padding:22px 14px;gap:16px}.cta{font-size:24px}.btn{padding:16px 14px;font-size:21px}.btn svg{width:22px}
+.soc a{padding:12px;font-size:11px}.silk{padding:20px 14px}blockquote{font-size:19px}
+footer{padding:5vh 12px;font-size:10px}
+.card i{font-size:13px;bottom:-24px;left:2px}.queue{height:calc(100% - 64px)}
+.rail{left:10px;right:10px;bottom:12px;height:48px;padding-top:8px}.rt{gap:6px}.rt img{width:22px;height:36px}
+.frame{inset:8px}.cnt{display:none}.ghost{font-size:30vw}.br.v{height:42%}.br.d{height:24%}}
+@media(prefers-reduced-motion:reduce){.curtain{display:none}.w>span,.fade{transition:none;transform:none;opacity:1}}
+</style></head><body>
+<div class="cur" id="cur"></div>
+<div class="curtain"><span>Pearl &amp; Gold</span></div>
+<div class="brand"><b>Pearl &amp; Gold</b><i>ЮВЕЛИРНЫЙ ВЕЧЕР · MMXXVI</i></div>
+<div class="wrap">
+<main class="left">
+<section class="in" id="s0"><p class="k fade" style="--d:0">Москва · 03 декабря 2026</p>
+<h1 data-split>Украшения <em>с характером</em></h1>
+<div class="win w1 fade" style="--d:2"></div>
+<p class="lead fade" style="--d:3">Откройте для себя магию создания утончённых украшений, которые подчеркнут вашу индивидуальность и добавят роскоши в ваш образ.</p>
+<p class="fade" style="--d:4">Приглашаем вас на эксклюзивный ювелирный творческий вечер, где вы окунётесь в мир жемчуга и благородных природных камней.</p></section>
+<section><div class="num fade">I</div><h2 data-split>Вечер, <b>который останется</b></h2>
+<dl class="facts fade" style="--d:1"><div><dt>Дата</dt><dd>03.12.2026</dd></div><div><dt>Время</dt><dd>19:00</dd></div><div><dt>Место</dt><dd>Москва, Кузнецкий Мост, 6/3 ст3</dd></div></dl>
+<p class="fade" style="--d:2">От выбора жемчужин до финальной сборки — вы создадите авторское украшение своими руками под руководством мастера.</p></section>
+<section><div class="num fade">II</div><h2 data-split>Что <b>вас ждёт</b></h2>
+<div class="win w2 fade" style="--d:1"></div>
+<ul class="fade" style="--d:2"><li>Натуральный жемчуг и природные камни — выбираете сами</li><li>Техники нанизывания, плетения и сборки фурнитуры</li><li>Подвески, серьги, браслеты, колье — создаёте своё</li><li>Атмосфера римского сада: тёплый свет, камень, оливковые ветви</li><li>Готовое украшение вы уносите с собой</li></ul></section>
+<section><div class="div fade"></div><div class="num fade">III</div><h2 data-split>Ваша <b>история</b></h2>
+<div class="panel fade" style="--d:1"><p class="cta">Создайте своё уникальное украшение, которое расскажет вашу историю.</p>
+<a class="btn" href="#" id="buy">Купить билет<svg viewBox="0 0 34 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h33M28 1l5 5-5 5"/></svg></a>
+<div class="soc"><a href="https://t.me/she_lisen" target="_blank" rel="noopener" id="tg"><svg viewBox="0 0 24 24"><path d="M21 3L2.5 10.2l5.100 2 2.200 6.500 3.100-4 5.400 4z"/></svg>Telegram</a></div></div></section>
+<section><div class="num fade">IV</div><h2 data-split>Слова <b>гостей</b></h2>
+<div class="silk fade" style="--d:1"><blockquote>Ушла с колье, которое теперь ношу каждый день. Невероятная атмосфера.<small>Анна · участница</small></blockquote></div></section>
+<footer>Pearl &amp; Gold · Москва · 2026</footer>
+</main>
+<aside class="right"><div class="stage" id="stage"><div class="ghost" id="ghost">03.12</div>
+<img class="br v" src="assets/branch-v.png" alt=""><img class="br d" src="assets/branch-d.png" alt="">
+<div class="queue" id="queue"></div><img class="arch" id="arch" src="assets/arch.png" alt=""><div class="cnt" id="cnt">01 / 6</div>
+<div class="rail"><div class="rt" id="rt"></div></div><div class="frame"></div></div></aside>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt" aria-hidden="true"><div class="mbox"><button class="mx" id="mx" aria-label="Закрыть">×</button><h3 id="mt">Оплата билета</h3><p>Отсканируйте QR-код камерой телефона или в приложении банка</p><img src="qr.svg" alt="QR-код для оплаты"><a class="mb pri" href="https://www.sberbank.ru/ru/choise_bank?requisiteNumber=79882866956&bankCode=100000000111" target="_blank" rel="noopener">Открыть в приложении банка</a><a class="mb" href="https://t.me/she_lisen" target="_blank" rel="noopener">Отправить чек в Telegram</a></div></div>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+<script>
+
+const N=6,F=['s01.jpg','s02.jpg','s03.jpg','s04.jpg','s05.jpg','s06.jpg'];
+const $=id=>document.getElementById(id),src=i=>'pix/'+F[i];
+const q=$('queue'),rt=$('rt'),stage=$('stage'),ghost=$('ghost'),cnt=$('cnt'),cur=$('cur');
+const cards=[],thumbs=[];
+for(let i=0;i<N;i++){const c=document.createElement('div');c.className='card';c.innerHTML=`<img src="${src(i)}" alt="Украшение ${i+1}" draggable="false"><i>N° ${String(i+1).padStart(2,'0')}</i>`;q.appendChild(c);cards.push(c)}
+for(let k=0;k<3;k++)for(let i=0;i<N;i++){const t=new Image();t.src=src(i);t.alt='';rt.appendChild(t);thumbs.push(t)}
+document.querySelectorAll('[data-split]').forEach(h=>{let n=0;const walk=nd=>{[...nd.childNodes].forEach(x=>{if(x.nodeType===3){const f=document.createDocumentFragment();x.textContent.split(/(\s+)/).forEach(p=>{if(!p.trim()){f.append(p);return}const w=document.createElement('span');w.className='w';w.innerHTML=`<span style="--i:${n++}">${p}</span>`;f.append(w)});x.replaceWith(f)}else walk(x)})};walk(h)});
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.25});
+document.querySelectorAll('section').forEach(s=>io.observe(s));
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const lenis=reduce?null:new Lenis({lerp:.085,smoothWheel:true});
+let target=0,pos=0,W=0,H=0,wc=0,hc=0,cx=0;
+const mob=()=>innerWidth<=900;
+const STEP=()=>innerHeight*.5; /* высота прокрутки на одну карточку */
+function measure(){W=stage.clientWidth;H=stage.clientHeight;const qh=H-(mob()?64:120);
+ wc=mob()?Math.min(W*.6,qh*.88*.58):Math.min(W*.31,qh*.88*.58);hc=wc/.58;cx=mob()?W*.38:W*.25;
+ cards.forEach(c=>{c.style.width=wc+'px';c.style.height=hc+'px'})}
+const SC=.76,LN=-Math.log(SC);
+function render(p){
+ const qh=H-(mob()?64:120),cy=qh*(mob()?.5:.52),idx=((Math.round(p)%N)+N)%N;
+ cards.forEach((c,i)=>{
+  const d=((i-p+1)%N+N)%N-1; /* от -1 до N-1, бесконечный круг */
+  let x,s,b,o;
+  if(d>=0){s=Math.pow(SC,d);x=wc*1.05*(1-s)/LN;b=d<.02?0:Math.min(14,d*2.2+d*d*.35);o=Math.max(0,1-Math.max(0,d-3.2)*.5)}
+  else{const t=Math.min(1,-d);s=1+t*.08;x=-t*(cx+wc*.4);b=t*10;o=1-t}
+  const y=cy-hc*s/2;
+  c.style.transform=`translate3d(${cx-wc/2+x}px,${y}px,0) scale(${s})`;
+  c.style.filter=b>.05?`blur(${b}px)`:'none';c.style.opacity=o;
+  c.style.zIndex=1000-Math.round((d+1)*10);c.style.visibility=o<=.01?'hidden':'visible';
+  c.classList.toggle('front',i===idx)});
+ const tw=thumbs[0].offsetWidth+10,m=((p%N)+N)%N;
+ rt.style.transform=`translateX(${-(N*tw+m*tw)+(rt.parentElement.clientWidth/2-tw/2)}px)`;
+ thumbs.forEach((t,i)=>t.classList.toggle('on',i%N===idx));
+ ghost.style.transform=`translate(${-(p%N)*W*.02}px,-50%)`;
+ cnt.textContent=`${String(idx+1).padStart(2,'0')} / ${N}`}
+function tick(t){lenis&&lenis.raf(t);target=scrollY/STEP();pos+=(target-pos)*.1;if(Math.abs(target-pos)<.0005)pos=target;render(pos);requestAnimationFrame(tick)}
+/*qa-hook*/{const qy=new URLSearchParams(location.search).get('y');if(qy){document.querySelector('.curtain').remove()}if(qy)addEventListener('load',()=>setTimeout(()=>{const Y=+qy*innerHeight;document.documentElement.style.scrollBehavior='auto';lenis?lenis.scrollTo(Y,{immediate:true,force:true}):scrollTo(0,Y)},500))}
+addEventListener('resize',()=>{measure()});measure();requestAnimationFrame(tick);
+let down=false,lx=0;
+stage.addEventListener('pointerdown',e=>{down=true;lx=e.clientX;stage.classList.add('drag')});
+addEventListener('pointerup',()=>{down=false;stage.classList.remove('drag')});
+addEventListener('pointermove',e=>{cur.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;if(!down)return;const dx=e.clientX-lx;lx=e.clientX;
+ const to=Math.max(0,scrollY-dx*STEP()/140);lenis?lenis.scrollTo(to,{immediate:true}):scrollTo(0,to)});
+document.querySelectorAll('a,.stage').forEach(a=>{a.addEventListener('mouseenter',()=>cur.classList.add('big'));a.addEventListener('mouseleave',()=>cur.classList.remove('big'))});
+
+</script>
+<script>
+function placeArch(){const W=stage.clientWidth,H=stage.clientHeight,m=innerWidth<=900,qh=H-(m?64:120),wc=m?Math.min(W*.6,qh*.88*.58):Math.min(W*.31,qh*.88*.58),hc=wc/.58,cx=m?W*.38:W*.25,cy=qh*(m?.5:.52);let ah=hc*1.2,aw=ah*.667;if(aw>W*.98){aw=W*.98;ah=aw/.667}const a=document.getElementById('arch');a.style.left=cx+'px';a.style.top=cy+'px';a.style.width=aw+'px';a.style.height=ah+'px';a.style.transform='translate(-50%,-50%)'}
+addEventListener('resize',placeArch);addEventListener('load',placeArch);placeArch();
+</script>
+<script>
+
+const modal=document.getElementById('modal');
+const openM=e=>{e&&e.preventDefault();modal.classList.add('open');modal.setAttribute('aria-hidden','false');lenis&&lenis.stop();document.getElementById('mx').focus()};
+const closeM=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');lenis&&lenis.start()};
+document.getElementById('buy').addEventListener('click',openM);document.getElementById('mx').addEventListener('click',closeM);
+modal.addEventListener('click',e=>{if(e.target===modal)closeM()});addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+
+</script>
+</body></html>
